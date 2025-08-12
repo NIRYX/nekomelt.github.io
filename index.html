@@ -17,7 +17,18 @@
         .carousel-btn.prev { left: 10px; }
         .carousel-btn.next { right: 10px; }
         .game-info { margin-top: 20px; text-align: center; }
+        .synopsis { margin: 10px 0; }
         footer { background: #ffb6c1; padding: 10px; text-align: center; margin-top: 20px; }
+
+        /* Media Query para móviles */
+        @media (max-width: 768px) {
+            .content { flex-direction: column; align-items: center; }
+            .logo { width: 150px; }
+            .carousel { width: 100%; margin-top: 20px; }
+            .carousel-btn { padding: 5px; font-size: 14px; }
+            .banner a { font-size: 16px; margin: 0 10px; }
+            .game-info { font-size: 14px; }
+        }
     </style>
 </head>
 <body>
@@ -40,11 +51,14 @@
         </div>
     </div>
     <div class="game-info">
-        <h2>Bienvenido a Nekomelt</h2>
-        <p>Disfruta de un paraíso de helados con adorables chicas gato. ¡Explora su mundo ahora!</p>
+        <h2>Welcome to Nekomelt</h2>
+        <div class="synopsis">
+            <p>In Nekomelt, you encounter three abandoned nekos, Kuramiru, Kurema, and Bomi. You decide to take them in and become their guardian while you run your ice cream shop. Can you melt their hearts?</p>
+        </div>
+        <p>¡Explore their world now!</p>
     </div>
     <footer>
-        <p>(C) Niryx Studio 2025</p>
+        <p>© Niryx Studio 2025</p>
     </footer>
     <script>
         let currentIndex = 0;

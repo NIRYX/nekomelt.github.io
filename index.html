@@ -17,6 +17,7 @@
         .carousel-btn.prev { left: 10px; }
         .carousel-btn.next { right: 10px; }
         .game-info { margin-top: 20px; text-align: center; }
+        footer { background: #ffb6c1; padding: 10px; text-align: center; margin-top: 20px; }
     </style>
 </head>
 <body>
@@ -27,12 +28,12 @@
         <a href="#about">ABOUT</a>
     </div>
     <div class="content">
-        <img src="nekomelt-logo.png" alt="Nekomelt Logo" class="logo">
+        <img src="img/nekomelt-logo.png" alt="Nekomelt Logo" class="logo">
         <div class="carousel">
             <div class="carousel-images">
-                <img src="neko_kurema.png" alt="neko_kurema">
-                <img src="neko_bomi.png" alt="neko_bomi">
-                <img src="neko_kuramiru.png" alt="neko_kuramiru">
+                <img src="img/neko_kurema.png" alt="neko_kurema">
+                <img src="img/neko_bomi.png" alt="neko_bomi">
+                <img src="img/neko_kuramiru.png" alt="neko_kuramiru">
             </div>
             <button class="carousel-btn prev">←</button>
             <button class="carousel-btn next">→</button>
@@ -42,6 +43,9 @@
         <h2>Bienvenido a Nekomelt</h2>
         <p>Disfruta de un paraíso de helados con adorables chicas gato. ¡Explora su mundo ahora!</p>
     </div>
+    <footer>
+        <p>(C) Niryx Studio 2025</p>
+    </footer>
     <script>
         let currentIndex = 0;
         const images = document.querySelector('.carousel-images');
